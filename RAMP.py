@@ -136,7 +136,7 @@ def main():
 		toaddrs = config.recipients
 		msg = MIMEMultipart()
 		msg['From'] = config.fromaddr
-		msg['Subject'] = "KILN MAIL"
+		msg['Subject'] = "KILN MAIL, started firing."
 		body = "\n".join([
        		"Kiln just started..",
        		" "
@@ -346,6 +346,7 @@ def main():
 			toaddrs = config.recipients
 			msg = MIMEMultipart()
 			msg['From'] = config.fromaddr
+			msg['Subject'] = "KILN MAIL, max reached."
 			body = "\n".join([
        			"Kiln just reached Maximum temperature!!!!!",
        			" "
@@ -405,7 +406,7 @@ def main():
 		toaddrs = config.recipients
 		msg = MIMEMultipart()
 		msg['From'] = config.fromaddr
-		msg['Subject'] = "KILN MAIL"
+		msg['Subject'] = "KILN MAIL, kiln is off."
 
 		body = "\n".join([
        		"Maximum temperature reached, KILN IS OFF and cooling now, just a few more hours till Christmas!",

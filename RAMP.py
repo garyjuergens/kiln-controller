@@ -322,18 +322,18 @@ def main():
                 config.holdc = 1100
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 630 and time_on < 690 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 630 and time_on < 660 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 1125
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 690 and time_on < 750 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 660 and time_on < 690 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 1150
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 750 and time_on < 890 and config.maxtoptemp < config.desiredmax:
-                config.holdc = config.desiredmax + 100
-                holdhere = config.holdc
-                hold(holdhere,top_tempc)
+        #elif time_on >= 720 and time_on < 890 and config.maxtoptemp < config.desiredmax:
+                #config.holdc = config.desiredmax + 100
+                #holdhere = config.holdc
+                #hold(holdhere,top_tempc)
         # MAX ATTAINED, HOLD and RAMP DOWN
         elif config.minutessincemax<5 and config.maxtoptemp >= config.desiredmax:
                 config.holdc = config.desiredmax
@@ -378,21 +378,21 @@ def main():
 			server.sendmail(config.fromaddr, toaddrs, text)
 			server.quit()
 			
-        #elif config.minutessincemax>=60 and config.minutessincemax < 65 and config.maxtoptemp >= config.desiredmax:
-                #config.holdc = config.desiredmax - 5
-                #holdhere = config.holdc
-                #print "Holding at max-5 for 5 minutes: ", config.holdc
-                #hold(holdhere,top_tempc)
-        #elif config.minutessincemax>=65 and config.minutessincemax < 70 and config.maxtoptemp >= config.desiredmax:
-                #config.holdc = config.desiredmax - 10
-                #holdhere = config.holdc
-                #print "Holding at max-10 for 5 minutes: ", config.holdc
-                #hold(holdhere,top_tempc)
-        #elif config.minutessincemax>=70 and config.minutessincemax < 80 and config.maxtoptemp >= config.desiredmax:
-                #config.holdc = config.desiredmax - 20
-                #holdhere = config.holdc
-                #print "Holding at max-20 for 10 minutes: ", config.holdc
-                #hold(holdhere,top_tempc)
+        elif config.minutessincemax>=5 and config.minutessincemax < 15 and config.maxtoptemp >= config.desiredmax:
+                config.holdc = config.desiredmax - 15
+                holdhere = config.holdc
+                print "Holding at max-15 for 10 minutes: ", config.holdc
+                hold(holdhere,top_tempc)
+        elif config.minutessincemax>=15 and config.minutessincemax < 25 and config.maxtoptemp >= config.desiredmax:
+                config.holdc = config.desiredmax - 30
+                holdhere = config.holdc
+                print "Holding at max-30 for 10 minutes: ", config.holdc
+                hold(holdhere,top_tempc)
+        elif config.minutessincemax>=25 and config.minutessincemax < 35 and config.maxtoptemp >= config.desiredmax:
+                config.holdc = config.desiredmax -45 
+                holdhere = config.holdc
+                print "Holding at max-45 for 10 minutes: ", config.holdc
+                hold(holdhere,top_tempc)
         else:
                 config.holdc = 1
                 holdhere = config.holdc

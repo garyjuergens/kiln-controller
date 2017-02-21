@@ -137,3 +137,5 @@ https://www.amazon.com/gp/product/B01HU3Q6F2/ref=oh_aui_detailpage_o00_s00?ie=UT
 switch to toggle power override/software control 
 https://www.amazon.com/gp/product/B00A151RJM/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1
 
+50 Amp Power cord
+https://www.amazon.com/gp/product/B00LQDFOMY/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1

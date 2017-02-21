@@ -87,16 +87,16 @@ def main():
 
 while True:
         main()
- 	top_bot = str(top_tempc)  + "," + str(bottom_tempc)
+	if top_tempc !=0 and bottom_tempc !=0:
+ 		top_bot = str(top_tempc)  + "," + str(bottom_tempc)
 	
-	# PUBLISH TO MQTT
-        mqttc = mqtt.Client("temp")
-        mqttc.username_pw_set("emonpi","emonpinewpassword")
-        #mqttc.connect("IP ADDRESS OF THE PI", PORT OF NO, 60)
-        mqttc.connect("10.0.1.15", 1883, 60)
-        #mqttc.loop_start()
-        mqttc.publish("tst",   str(top_bot) )
-	logger.info("Sending TOP and BOTTOM Temps to emoncms: " + str(top_bot))
+		# PUBLISH TO MQTT
+        	mqttc = mqtt.Client("temp")
+        	mqttc.username_pw_set("emonpi","emonpimqtt2016")
+        	mqttc.connect("10.0.1.15", 1883, 60)
+        	#mqttc.loop_start()
+        	mqttc.publish("tst",   str(top_bot) )
+		logger.info("Sending TOP and BOTTOM Temps to emoncms: " + str(top_bot))
         time.sleep(20)
 
 	

@@ -7,7 +7,7 @@ starttemp=1234567.999
 #starttemp=30
 maxtoptemp=0
 maxbottomtemp=0
-desiredmax=50
+desiredmax=1150
 holdatmax=1
 holdc=30
 donemailsent = 0
@@ -16,4 +16,3 @@ logfilename = "testfile.log"
 gmailpassword = "PASSWORDISTHIS"
 fromaddr = "user1@gmail.com"
 recipients = ['user1@gmail.com','user2@gmail.com']
-

@@ -330,10 +330,11 @@ def main():
                 config.holdc = 1150
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        #elif time_on >= 720 and time_on < 890 and config.maxtoptemp < config.desiredmax:
-                #config.holdc = config.desiredmax + 100
-                #holdhere = config.holdc
-                #hold(holdhere,top_tempc)
+	 #ATTAIN MAX
+        elif time_on >= 690 and time_on < 890 and config.maxtoptemp < config.desiredmax:
+                config.holdc = config.desiredmax + 100
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
         # MAX ATTAINED, HOLD and RAMP DOWN
         elif config.minutessincemax<5 and config.maxtoptemp >= config.desiredmax:
                 config.holdc = config.desiredmax

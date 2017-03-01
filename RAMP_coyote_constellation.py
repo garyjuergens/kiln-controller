@@ -212,43 +212,95 @@ def main():
                 config.holdc = 100
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 120 and time_on <132 and config.maxtoptemp < config.desiredmax:
-                config.holdc = 104
+        elif time_on >= 120 and time_on <126 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 140
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 132 and time_on <162 and config.maxtoptemp < config.desiredmax:
-                config.holdc = 199
+        elif time_on >= 126 and time_on <132 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 170
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 162 and time_on <192 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 132 and time_on <147 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 183
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 147 and time_on <162 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 208
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 162 and time_on <177 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 250
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 177 and time_on <192 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 293
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 192 and time_on <222 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 192 and time_on <207 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 340
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 207 and time_on <222 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 387
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 222 and time_on <252 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 222 and time_on <237 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 420
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 237 and time_on <244 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 450 
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 244 and time_on <252 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 481
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 252 and time_on <282 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 252 and time_on <267 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 530
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 267 and time_on <275 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 550
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 275 and time_on <282 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 575
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 282 and time_on <312 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 282 and time_on <298 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 625
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 298 and time_on <312 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 669
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 312 and time_on <342 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 312 and time_on <327 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 716
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 327 and time_on <342 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 763
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 342 and time_on <372 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 342 and time_on <357 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 812
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 357 and time_on <362 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 830
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 362 and time_on <372 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 859
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-        elif time_on >= 372 and time_on < 402 and config.maxtoptemp < config.desiredmax:
+        elif time_on >= 372 and time_on < 387 and config.maxtoptemp < config.desiredmax:
+                config.holdc = 905
+                holdhere = config.holdc
+                hold(holdhere,top_tempc)
+        elif time_on >= 387 and time_on < 402 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 953
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
@@ -292,8 +344,8 @@ def main():
                 config.holdc = 1148
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
-	# ATTAIN MAX (1150)
-        elif time_on >= 502 and time_on < 602 and config.maxtoptemp < config.desiredmax:
+	# ATTAIN MAX (1150) - coyote constellation
+        elif time_on >= 502 and time_on < 802 and config.maxtoptemp < config.desiredmax:
                 config.holdc = 1150
                 holdhere = config.holdc
                 hold(holdhere,top_tempc)
